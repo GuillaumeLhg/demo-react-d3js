@@ -13,6 +13,10 @@ function worldTour(divRef: React.RefObject<HTMLDivElement>) {
     .clipAngle(90)
     .precision(0.6);
 
+  // The first render of React creates a duplicate, we remove everything before redrawing
+  d3.select(divRef.current)
+    .selectAll("*").remove();
+  
   var canvas = d3.select(divRef.current)
     .append("canvas")
     .attr("width", width)
@@ -91,5 +95,9 @@ export const WorldTour: React.FunctionComponent = () => {
     worldTour(divRef);
   }, [divRef]);
 
-  return <div ref={divRef} />;
+  return (
+    <div>
+      <div ref={divRef} />;
+    </div>
+  )
 };

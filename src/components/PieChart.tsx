@@ -25,6 +25,10 @@ function pieChart(divRef: React.RefObject<HTMLDivElement>) {
     drawLabels();
 
     function createSvg(): void {
+        // The first render of React creates a duplicate, we remove everything before redrawing
+        d3.select(divRef.current)
+            .selectAll("*").remove();
+
         svg = d3.select(divRef.current)
             .append('svg')
             .attr("width", width)
