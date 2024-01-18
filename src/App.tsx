@@ -1,25 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { DrawChart } from './components/DrawChart';
+import { WorldTour } from './components/WorldTour';
+
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import HomePage from './home/HomePage';
+import { PieChart } from './components/PieChart';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Router>
+      <header className="navBar">
+        <span className="nav logo">
+          <img src="logo192.png" alt="logo" width="50" height="50" />
+        </span>
+        <NavLink to="/" className="nav navButton">
+          Home
+        </NavLink>
+        <NavLink to="/drawChart" className="nav navButton">
+          Draw chart
+        </NavLink>
+        <NavLink to="/pieChart" className="nav navButton">
+          Pie chart
+        </NavLink>
+        <NavLink to="/worldTour" className="nav navButton">
+          World tour
+        </NavLink>
       </header>
-    </div>
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/drawChart" element={<DrawChart />} />
+          <Route path="/pieChart" element={<PieChart />} />
+          <Route path="/worldTour" element={<WorldTour />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

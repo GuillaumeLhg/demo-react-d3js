@@ -44,3 +44,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Libraries to add
+npm install react-router-dom@6.3
+npm install d3
+npm install @types/d3
+npm install topojson
+npm install @types/topojson
