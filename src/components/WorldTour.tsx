@@ -28,7 +28,7 @@ function worldTour(divRef: React.RefObject<HTMLDivElement>) {
     .projection(projection)
     .context(c);
 
-  var title = d3.select("h1");
+  var title = d3.select("h1#worldTourTitle");
 
   Promise.all([
     d3.json("/assets/data/world-tour/world-110m.json"),
@@ -96,7 +96,8 @@ export const WorldTour: React.FunctionComponent = () => {
   }, [divRef]);
 
   return (
-    <div>
+    <div id="worldTour">
+      <h1 id="worldTourTitle"></h1>
       <div ref={divRef} />;
     </div>
   )

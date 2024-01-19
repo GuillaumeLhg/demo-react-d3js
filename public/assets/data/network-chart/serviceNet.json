@@ -1,0 +1,150 @@
+[
+    {
+        "imports": [
+            "UserManagementService",
+            "OrderProcessingService",
+            "InventoryManagementService"
+        ],
+        "name": "PaymentGatewayService",
+        "size": 3938
+    },
+    {
+        "imports": [
+            "UserManagementService",
+            "AnalyticsService"
+        ],
+        "name": "EmailNotificationService",
+        "size": 3938
+    },
+    {
+        "imports": [
+            "OrderProcessingService",
+            "ShippingService",
+            "AnalyticsService"
+        ],
+        "name": "ProductCatalogService",
+        "size": 3950
+    },
+    {
+        "imports": [
+            "PaymentGatewayService",
+            "EmailNotificationService",
+            "LoggingService"
+        ],
+        "name": "AuthenticationService",
+        "size": 3943
+    },
+    {
+        "imports": [
+            "MessagingService",
+            "LoggingService",
+            "SearchService"
+        ],
+        "name": "CustomerSupportService",
+        "size": 3949
+    },
+    {
+        "imports": [
+            "ImageProcessingService",
+            "SearchService",
+            "AuthenticationService"
+        ],
+        "name": "RecommendationEngineService",
+        "size": 3950
+    },
+    {
+        "imports": [
+            "UserManagementService",
+            "AnalyticsService",
+            "LoggingService"
+        ],
+        "name": "InventoryManagementService",
+        "size": 3943
+    },
+    {
+        "imports": [
+            "EmailNotificationService",
+            "AnalyticsService"
+        ],
+        "name": "OrderProcessingService",
+        "size": 3954
+    },
+    {
+        "imports": [
+            "LoggingService",
+            "EmailNotificationService",
+            "AuthenticationService"
+        ],
+        "name": "UserManagementService",
+        "size": 3939
+    },
+    {
+        "imports": [
+            "ImageProcessingService",
+            "ProductCatalogService"
+        ],
+        "name": "SearchService",
+        "size": 3940
+    },
+    {
+        "imports": [
+            "PaymentGatewayService",
+            "EmailNotificationService",
+            "InventoryManagementService"
+        ],
+        "name": "MessagingService",
+        "size": 3938
+    },
+    {
+        "imports": [
+            "UserManagementService",
+            "ShippingService",
+            "InventoryManagementService"
+        ],
+        "name": "LoggingService",
+        "size": 3947
+    },
+    {
+        "imports": [
+            "SearchService",
+            "AuthenticationService",
+            "ProductCatalogService",
+            "ShippingService",
+            "UserManagementService"
+        ],
+        "name": "AnalyticsService",
+        "size": 3940
+    },
+    {
+        "imports": [
+            "AuthenticationService",
+            "InventoryManagementService"
+        ],
+        "name": "ImageProcessingService",
+        "size": 3959
+    },
+    {
+        "imports": [
+            "CustomerSupportService",
+            "ProductCatalogService",
+            "LoggingService",
+            "SearchService"
+        ],
+        "name": "ShippingService",
+        "size": 3938
+    },
+    {
+        "imports": [
+            "UserManagementService",
+            "AuthenticationService",
+            "LoggingService",
+            "EmailNotificationService",
+            "MessagingService",
+            "ProductCatalogService",
+            "SearchService",
+            "InventoryManagementService"
+        ],
+        "name": "PaymentGatewayService",
+        "size": 3938
+    }
+]

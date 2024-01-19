@@ -36,3 +36,89 @@
 .active {
   background-color: #04AA6D;
 }
+
+.node {
+  font: 300 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  fill: #bbb;
+}
+
+.node:hover {
+  fill: #000;
+}
+
+.link {
+  stroke: steelblue;
+  stroke-opacity: 0.4;
+  fill: none;
+  pointer-events: none;
+}
+
+.node:hover,
+.node--source,
+.node--target {
+  font-weight: 700;
+}
+
+.node--source {
+  fill: #2ca02c;
+}
+
+.node--target {
+  fill: #d62728;
+}
+
+.link--source,
+.link--target {
+  stroke-opacity: 1;
+  stroke-width: 2px;
+}
+
+.link--source {
+  stroke: #d62728;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: growStroke 1s linear forwards;
+}
+
+.link--target {
+  stroke: #2ca02c;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: growStroke 1s linear forwards;
+}
+
+@keyframes growStroke {
+  0% {
+      stroke-dashoffset: 1000;
+  }
+
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+.red {
+  width: 40px;
+  height: 10px;
+  background-color: red;
+}
+
+.green {
+  width: 40px;
+  height: 10px;
+  background-color: green;
+}
+
+#red, #green {
+  display: flex;
+  align-items: center;
+}
+
+#network-and-legend {
+  display: flex;
+  justify-content: center;
+}
+
+#worldTour {
+  text-align: center;
+}
